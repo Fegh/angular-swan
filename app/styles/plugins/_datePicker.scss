@@ -1,0 +1,43 @@
+.dataPicker {
+  .btn {
+    .text-info {
+      color: $green;
+      font-weight: bold;
+    }
+  }
+  table {
+    background: $nav-bg;
+
+    th {
+      color: $green;
+    }
+
+    td {
+      color: #787878;
+    }
+  }
+
+  .btn-default {
+    background: transparent;
+    border: rgba(255, 255, 255, 0) 1px solid;
+    color: #dddddd;
+  }
+
+  .text-muted {
+    color: #999999;
+  }
+
+  .btn-default:active, .btn-default.active {
+    outline: 0;
+    background-image: none;
+    border: $green 1px solid;
+    border-radius: 100px;
+    color: $green;
+    font-weight: bold;
+  }
+
+  .btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled.focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled].focus, .btn-default[disabled]:active, .btn-default[disabled].active, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default.active {
+    background-color: transparent;
+    border: none;
+  }
+}

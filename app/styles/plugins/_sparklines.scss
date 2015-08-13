@@ -1,0 +1,60 @@
+/**
+ * Angular Sparklines styles
+ */
+span.sparkline {
+  display: inline-block;
+  width: 5em;
+  height: 15px;
+  margin: 0 .2em;
+  vertical-align: baseline;
+}
+
+sparkline {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+sparkline path {
+  stroke: #d9e1e4;
+  stroke-width: 1;
+  fill: none;
+}
+
+sparkline path.area {
+  stroke: none;
+  fill: #eff0f2;
+}
+
+sparkline rect.bar {
+  stroke: none;
+  fill: #00b3f9;
+}
+
+sparkline rect.binary {
+  fill: #76c047;
+}
+
+sparkline rect.first {
+  fill: #ff3333;
+}
+
+sparkline rect.last {
+  fill: #ff3333;
+}
+
+sparkline rect.max {
+  fill: #09c6ec;
+}
+
+sparkline rect.min {
+  fill: #33ccff;
+}
+
+sparkline rect.negative {
+  fill: #ff3333;
+}
+
+sparkline .hidden {
+  display: none;
+}
