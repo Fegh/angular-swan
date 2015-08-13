@@ -11,4 +11,4 @@
 *Build the file to dist: $grunt build<br/>
 
 
- ![image](https://github.com/shmilyCai/angular-swan/blog/master/swan.png)
+ ![image](https://github.com/shmilyCai/angular-swan/blob/master/swan.png)
