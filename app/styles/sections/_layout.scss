@@ -1,0 +1,372 @@
+// Sidebars
+$sidebar-width: 250px;
+$sidebar-width-xs: $screen-xs-min - 40;
+$sidebar-width-sm: $screen-sm-min - 80;
+
+$sidebar-width-xs: 250px;
+$sidebar-width-sm: 250px;
+$sidebar-width-md: 250px;
+$sidebar-width-lg: 250px;
+$sidebar-left-width: $sidebar-width;
+$sidebar-right-width: 260px;
+
+$sidebar-left-width-xs: $sidebar-width-xs;
+$sidebar-right-width-xs: $sidebar-right-width;
+
+$sidebar-left-width-sm: $sidebar-width-sm;
+$sidebar-right-width-sm: $sidebar-right-width;
+
+$sidebar-left-width-md: $sidebar-width-md;
+$sidebar-right-width-md: $sidebar-right-width;
+
+$sidebar-left-width-lg: $sidebar-width-lg;
+$sidebar-right-width-lg: $sidebar-right-width;
+
+$sidebar-header-height: 70px;
+$sidebar-header-font-size: 23px;
+$zindex-sidebar-header: 10;
+$sidebar-header-padding: 0 10px;
+$sidebar-header-color: #fff;
+$sidebar-background: $gray;
+$sidebar-left-background: $nav-bg;
+$sidebar-right-background: $nav-bg;
+
+.app {
+  background-color: $page-bg;
+}
+
+.header {
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+}
+
+.app-content {
+  margin-top: 0px;
+  padding: 0px;
+  background-color: $page-bg;
+  overflow: auto;
+  position: relative;
+}
+
+.footer {
+  padding: 15px 20px;
+  width: 100%;
+  background: $white;
+  text-align: right;
+}
+
+.content {
+  padding: 0px 20px 0px 20px;
+}
+
+.page-title {
+  clear: both;
+  padding: 8px 30px;
+
+  h3 {
+    display: inline;
+    float: left;
+  }
+  .breadcrumb {
+    display: inline;
+    float: right;
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+}
+
+.sidebar {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: none;
+  @include translate3d(0, 0, 0);
+  @include transition-transform(400ms ease);
+  pointer-events: none;
+}
+
+.sidebar-left {
+  background: $sidebar-left-background;
+  width: $sidebar-left-width;
+  left: 0;
+  right: auto;
+  @include transition(width 400ms ease);
+}
+
+.sidebar-right {
+  background: $sidebar-right-background;
+  width: $sidebar-right-width;
+  left: auto;
+  right: 0;
+  @include transition(width 400ms ease);
+}
+
+.sidebar-left-visible .sidebar-left, .sidebar-right-visible .sidebar-right {
+  display: block;
+}
+
+.sidebar-left-in .sidebar-left, .sidebar-right-in .sidebar-right {
+  pointer-events: auto;
+}
+
+.sidebar-left-in .app {
+  width: 100%;
+  @include translate($sidebar-left-width, 0);
+  @include transition-transform(400ms ease);
+}
+
+.sidebar-right-in .app {
+  width: 100%;
+  @include translate(-$sidebar-right-width, 0);
+  @include transition-transform(400ms ease);
+}
+
+.sidebar-header, .app-name {
+  position: relative;
+  width: 100%;
+  line-height: $sidebar-header-height;
+  padding: $sidebar-header-padding;
+  font-size: $sidebar-header-font-size;
+  color: $sidebar-header-color;
+  margin: 0;
+  z-index: $zindex-sidebar-header;
+}
+
+.mail {
+  .logo-container {
+    width: $sidebar-left-width;
+  }
+}
+
+@media (min-width: $screen-desktop) {
+
+  .sidebar {
+    pointer-events: auto;
+  }
+
+  .sidebar-toggle {
+    display: none;
+  }
+
+  .navbar-brand-center {
+    text-align: left;
+    width: auto;
+    float: left;
+    position: relative;
+  }
+
+  .sidebar-left {
+    display: block;
+    left: 0;
+    width: $sidebar-left-width-md;
+  }
+
+  .sidebar-right {
+    display: block;
+    right: 0;
+    left: auto;
+    width: $sidebar-right-width-md;
+  }
+
+  .sidebar-right-in .sidebar-left {
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    -moz-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+  }
+
+  .sidebar-left-in .sidebar-right {
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    -moz-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+  }
+
+  .has-sidebar-left .app, .sidebar-left-in .app {
+    width: auto;
+    margin-left: $sidebar-left-width-md;
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    -moz-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+    position: relative;
+    -webkit-transition: -webkit-transform 0 ease;
+    -moz-transition: -moz-transform 0 ease;
+    transition: transform 0 ease;
+  }
+
+  .sidebar-right-in .app {
+    width: auto;
+    margin-right: $sidebar-right-width-md;
+    right: 0;
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    -moz-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+    position: relative;
+    -webkit-transition: -webkit-transform 0 ease;
+    -moz-transition: -moz-transform 0 ease;
+    transition: transform 0 ease;
+  }
+
+  .mail {
+    .logo-container {
+      width: $sidebar-left-width-md;
+    }
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .sidebar-left {
+    width: $sidebar-left-width-lg;
+  }
+  .sidebar-right {
+    width: $sidebar-right-width-lg;
+  }
+  .has-sidebar-left .app, .sidebar-left-in .app {
+    margin-left: $sidebar-left-width-lg;
+  }
+  .sidebar-right-in .app {
+    margin-right: $sidebar-right-width-lg;
+  }
+  .mail {
+    .logo-container {
+      width: $sidebar-left-width-lg;
+    }
+  }
+}
+
+@media (min-width: $screen-xs-min) {
+  .sidebar-left {
+    width: $sidebar-left-width-xs;
+  }
+  .sidebar-right {
+    width: $sidebar-right-width-xs;
+  }
+  .sidebar-left-in .app {
+    @include translate3d($sidebar-left-width-xs, 0, 0);
+  }
+  .sidebar-right-in .app {
+    @include translate3d(-$sidebar-right-width-xs, 0, 0);
+  }
+  .mail {
+    .logo-container {
+      width: $sidebar-left-width-xs;
+    }
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .sidebar-left {
+    width: $sidebar-left-width-sm;
+  }
+  .sidebar-right {
+    width: $sidebar-right-width-sm;
+  }
+  .sidebar-left-in .app {
+    @include translate3d($sidebar-left-width-sm, 0, 0);
+  }
+  .sidebar-right-in .app {
+    @include translate3d(-$sidebar-right-width-sm, 0, 0);
+  }
+  .mail {
+    .logo-container {
+      width: $sidebar-left-width-sm;
+    }
+  }
+}
+
+@media (min-width: $screen-desktop) {
+
+  .sidebar {
+    pointer-events: auto;
+  }
+
+  .sidebar-toggle {
+    display: none;
+  }
+
+  .navbar-brand-center {
+    text-align: left;
+    width: auto;
+    float: left;
+    position: relative;
+  }
+
+  .sidebar-left {
+    display: block;
+    left: 0;
+    width: $sidebar-left-width-md;
+  }
+
+  .sidebar-right {
+    display: block;
+    right: 0;
+    left: auto;
+    width: $sidebar-right-width-md;
+  }
+  .mail {
+    .logo-container {
+      width: $sidebar-left-width-md;
+    }
+  }
+
+  .sidebar-right-in .sidebar-left {
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    -moz-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+  }
+
+  .sidebar-left-in .sidebar-right {
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    -moz-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+  }
+
+  .has-sidebar-left .app, .sidebar-left-in .app {
+    width: auto;
+    margin-left: $sidebar-left-width-md;
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    -moz-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+    position: relative;
+    -webkit-transition: -webkit-transform 0 ease;
+    -moz-transition: -moz-transform 0 ease;
+    transition: transform 0 ease;
+  }
+
+  .sidebar-right-in .app {
+    width: auto;
+    margin-right: $sidebar-right-width-md;
+    right: 0;
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    -moz-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+    position: relative;
+    -webkit-transition: -webkit-transform 0 ease;
+    -moz-transition: -moz-transform 0 ease;
+    transition: transform 0 ease;
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .sidebar-left {
+    width: $sidebar-left-width-lg;
+  }
+  .sidebar-right {
+    width: $sidebar-right-width-lg;
+  }
+  .has-sidebar-left .app, .sidebar-left-in .app {
+    margin-left: $sidebar-left-width-lg;
+  }
+  .sidebar-right-in .app {
+    margin-right: $sidebar-right-width-lg;
+  }
+  .mail {
+    .logo-container {
+      width: $sidebar-left-width-lg;
+    }
+  }
+}
+
+

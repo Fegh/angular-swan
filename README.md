@@ -1,6 +1,3 @@
-Thank you for purchasing.
-If you have any questions that are beyond the scope of this documentation, please feel free to contact me.
-(shmily.cai@gmail.com)
 
 How to Run it?
 

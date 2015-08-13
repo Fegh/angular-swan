@@ -1,0 +1,169 @@
+.btn {
+  padding: 9px 28px;
+  line-height: 20px;
+  background-image: none !important;
+  text-shadow: none;
+  box-shadow: none;
+  border-width: 2px;
+  outline: none;
+
+  @include border-bottom-radius(6px);
+  @include border-top-radius(6px);
+  @include border-left-radius(6px);
+  @include border-right-radius(6px);
+  &,
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+      @include tab-focus;
+      outline: none;
+    }
+  }
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn-purple {
+  @include button-variant($white, $purple, $purple);
+}
+.btn-inverse {
+  @include button-variant($white, $inverse, $inverse);
+}
+
+/*button line*/
+@mixin button-line-variant($color, $background, $border) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:hover,
+  &:focus,
+  &.focus,
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: #fff;
+    background-color: $border;
+    border-color: $border;
+
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      color: $color;
+      background-color: $background;
+      border-color: $border;
+    }
+  }
+
+  .badge {
+    color: #fff;
+    background-color: $border;
+  }
+}
+
+.btn-line-white {
+  @include button-line-variant($white, transparent, #CDD5D8);
+}
+
+.btn-line-default {
+  @include button-line-variant($btn-default-color, transparent, #CDD5D8);
+}
+
+.btn-line-default {
+  &:hover, &:focus, &.focus, &:active, &.active, .open > &.dropdown-toggle {
+    color: $btn-default-color;
+  }
+}
+
+.btn-line-primary {
+  @include button-line-variant($btn-primary-bg, transparent, $btn-primary-bg);
+}
+
+.btn-line-success {
+  @include button-line-variant($btn-success-bg, transparent, $btn-success-bg);
+}
+
+.btn-line-info {
+  @include button-line-variant($btn-info-bg, transparent, $btn-info-bg);
+}
+
+.btn-line-warning {
+  @include button-line-variant($btn-warning-bg, transparent, $btn-warning-bg);
+}
+
+.btn-line-danger {
+  @include button-line-variant($btn-danger-bg, transparent, $btn-danger-bg);
+}
+
+.btn-line-purple {
+  @include button-line-variant($purple, transparent, $purple);
+}
+
+.btn-line-inverse {
+  @include button-line-variant($inverse, transparent, $inverse);
+}
+
+.btn-line-default {
+  &:hover,
+  &:focus,
+  &.focus,
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $btn-default-color;
+  }
+}
+
+// Button Sizes
+// --------------------------------------------------
+.btn-lg {
+  // line-height: ensure even-numbered height of button next to large input
+  @include button-size(13px, 37px, $font-size-large, 24px, $border-radius-large);
+}
+
+.btn-sm {
+  // line-height: ensure proper height of button next to small input
+  @include button-size(5px, 18px, $font-size-small, $line-height-small, $border-radius-small);
+}
+
+.btn-xs {
+  @include button-size(3px, 8px, $font-size-small, $line-height-small, $border-radius-small);
+}
+
+.btn-circle {
+  @include border-bottom-radius(25px);
+  @include border-top-radius(25px);
+  @include border-left-radius(25px);
+  @include border-right-radius(25px);
+}
+
+.btn-cons {
+  margin-right: 5px;
+  min-width: 140px;
+  margin-bottom: 16px;
+}
+
+.btn-group > .btn + .dropdown-toggle {
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.btn:active, .btn.active {
+  outline: 0;
+  background-image: none;
+  box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.125);
+}

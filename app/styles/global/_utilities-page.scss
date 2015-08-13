@@ -1,0 +1,453 @@
+
+body {
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.help {
+  color: #A7ABB1;
+  font-size: 12px;
+}
+
+/*background color*/
+.bg-primary {
+  color: $white !important;
+  background-color: $bg-primary !important;
+}
+
+.bg-success {
+  color: $white !important;
+  background-color: $bg-success !important;
+}
+
+.bg-info {
+  color: $white !important;
+  background-color: $bg-info !important;
+}
+
+.bg-warning {
+  color: $white !important;
+  background-color: $bg-warning !important;
+}
+
+.bg-danger {
+  color: $white !important;
+  background-color: $bg-danger !important;
+}
+
+.bg-lightBlue {
+  color: $white !important;
+  background-color: $lightBlue !important;
+}
+
+.bg-green {
+  color: $white !important;
+  background-color: $green !important;
+}
+
+.bg-blue {
+  color: $white !important;
+  background-color: $blue !important;
+}
+
+.bg-purple {
+  color: $white !important;
+  background-color: $purple !important;
+}
+
+.bg-yellow {
+  color: $white !important;
+  background-color: $yellow !important;
+}
+
+.bg-orange {
+  color: $white !important;
+  background-color: $orange !important;
+}
+
+.bg-red {
+  color: $white !important;
+  background-color: $red !important;
+}
+
+.bg-inverse {
+  color: $white !important;
+  background-color: $inverse !important;
+}
+
+.bg-lightGray {
+  background-color: $header-bg !important;
+}
+
+.text-small {
+  font-size: 12px;
+
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+/*text color*/
+a.text-green, .text-green {
+  color: $green !important;
+}
+
+a.text-blue, .text-blue {
+  color: $blue !important;
+}
+
+a.text-red, .text-red {
+  color: $red !important;
+}
+
+a.text-yellow, .text-yellow {
+  color: $yellow !important;
+}
+
+a.text-orange, .text-orange {
+  color: $orange !important;
+}
+
+a.text-lightBlue, .text-lightBlue {
+  color: $lightBlue !important;
+}
+
+a.text-purple, .text-purple {
+  color: $purple !important;
+}
+
+a.text-black, .text-black {
+  color: $gray-dark !important;
+}
+
+a.text-inverse, .text-inverse {
+  color: $inverse !important;
+}
+
+a.text-white, .text-white {
+  color: $white !important;
+}
+
+a.text-muted {
+  color: $text-muted !important;
+}
+
+//
+// Utility classes
+// --------------------------------------------------
+.no-padding {
+  padding: 0px !important;
+}
+
+.no-margin {
+  margin: 0px !important;
+}
+
+.spacing-bottom {
+  margin-bottom: 30px;
+}
+
+.v-align-bottom {
+  vertical-align: bottom;
+}
+
+.v-align-top {
+  vertical-align: top;
+}
+
+.v-align-middle {
+  vertical-align: middle;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+.no-margin {
+  margin: 0px !important;
+}
+
+.padding-5 {
+  padding: 5px !important;
+}
+
+.padding-10 {
+  padding: 10px !important;
+}
+
+.padding-20 {
+  padding: 20px !important;
+}
+
+.padding-30 {
+  padding: 30px !important;
+}
+
+.padding-40 {
+  padding: 40px !important;
+}
+
+.padding-50 {
+  padding: 50px !important;
+}
+
+/** Padding top **/
+.p-t-10 {
+  padding-top: 10px !important;
+}
+
+.p-t-20 {
+  padding-top: 20px !important;
+}
+
+.p-t-30 {
+  padding-top: 30px !important;
+}
+
+.p-t-40 {
+  padding-top: 40px !important;
+}
+
+.p-t-50 {
+  padding-top: 50px !important;
+}
+
+.p-t-60 {
+  padding-top: 60px !important;
+}
+
+/** Padding Bottom **/
+.p-b-10 {
+  padding-bottom: 10px !important;
+}
+
+.p-b-20 {
+  padding-bottom: 20px !important;
+}
+
+.p-b-30 {
+  padding-bottom: 30px !important;
+}
+
+.p-b-40 {
+  padding-bottom: 40px !important;
+}
+
+.p-b-50 {
+  padding-bottom: 50px !important;
+}
+
+.p-b-60 {
+  padding-bottom: 60px !important;
+}
+
+/** Padding Left **/
+.p-l-10 {
+  padding-left: 10px !important;
+}
+
+.p-l-20 {
+  padding-left: 20px !important;
+}
+
+.p-l-30 {
+  padding-left: 30px !important;
+}
+
+.p-l-40 {
+  padding-left: 40px !important;
+}
+
+.p-l-50 {
+  padding-left: 50px !important;
+}
+
+.p-l-50 {
+  padding-left: 50px !important;
+}
+
+.p-l-60 {
+  padding-left: 60px !important;
+}
+
+/** Padding Right **/
+.p-r-10 {
+  padding-right: 10px !important;
+}
+
+.p-r-20 {
+  padding-right: 20px !important;
+}
+
+.p-r-30 {
+  padding-right: 30px !important;
+}
+
+.p-r-40 {
+  padding-right: 40px !important;
+}
+
+.p-r-50 {
+  padding-right: 50px !important;
+}
+
+.p-r-60 {
+  padding-right: 60PX !important;
+}
+
+/** Margins **/
+.margin-10 {
+  margin: 10px !important;
+}
+
+.margin-20 {
+  margin: 20px !important;
+}
+
+.margin-30 {
+  margin: 30px !important;
+}
+
+/** Margin top **/
+.m-t-5 {
+  margin-top: 5px !important;
+}
+
+.m-t-10 {
+  margin-top: 10px !important;
+}
+
+.m-t-20 {
+  margin-top: 20px !important;
+}
+
+.m-t-30 {
+  margin-top: 30px !important;
+}
+
+.m-t-40 {
+  margin-top: 40px !important;
+}
+
+/** Margin Bottom **/
+.m-b-5 {
+  margin-bottom: 5px !important;
+}
+
+.m-b-10 {
+  margin-bottom: 10px !important;
+}
+
+.m-b-20 {
+  margin-bottom: 20px !important;
+}
+
+.m-b-30 {
+  margin-bottom: 30px !important;
+}
+
+.m-b-40 {
+  margin-bottom: 40px !important;
+}
+
+/** Margin Left **/
+.m-l-5 {
+  margin-left: 5px !important;
+}
+
+.m-l-10 {
+  margin-left: 10px !important;
+}
+
+.m-l-20 {
+  margin-left: 20px !important;
+}
+
+.m-l-30 {
+  margin-left: 30px !important;
+}
+
+.m-l-40 {
+  margin-left: 40px !important;
+}
+
+/** Padding Right **/
+.m-r-5 {
+  margin-right: 5px !important;
+}
+
+.m-r-10 {
+  margin-right: 10px !important;
+}
+
+.m-r-20 {
+  margin-right: 20px !important;
+}
+
+.m-r-30 {
+  margin-right: 30px !important;
+}
+
+.m-r-40 {
+  margin-right: 40px !important;
+}
+
+.inline {
+  display: inline-block !important;
+}
+
+// Floats
+// -------------------------
+
+.clearfix {
+  @include clearfix;
+}
+
+.center-block {
+  @include center-block;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+// Toggling content
+// -------------------------
+
+// Note: Deprecated .hide in favor of .hidden or .sr-only (as appropriate) in v3.0.1
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.text-hide {
+  @include text-hide;
+}
+
+// Hide from screenreaders and browsers
+//
+// Credit: HTML5 Boilerplate
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+// For Affix plugin
+// -------------------------
+
+.affix {
+  position: fixed;
+}

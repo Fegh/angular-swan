@@ -1,0 +1,151 @@
+
+.tile-one {
+
+  .tile-stats {
+    position: relative;
+    display: block;
+    background: $white;
+    overflow: hidden;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 4px;
+  }
+  .tile-stats .tile-i {
+    position: absolute;
+    padding: 20px;
+    color: #fff;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  .tile-stats .tile-text {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 0px;
+    width: 100%;
+    padding-left: 50px;
+  }
+  .tile-stats .tile-text span {
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 20px;
+    color: $gray;
+  }
+  .tile-stats .tile-text p {
+    color: #aaa;
+    text-transform: uppercase;
+    margin-top: -5px;
+    font-size: 14px;
+  }
+  .tile-stats .tile-orange {
+    background: $brand-warning;
+  }
+  .tile-stats .tile-purple {
+    background: $purple;
+  }
+  .tile-stats .tile-blue {
+    background: $brand-info;
+  }
+  .tile-stats .tile-green {
+    background: $brand-success;
+  }
+  .tile-stats .tile-default {
+    background: $inverse;
+  }
+  .tile-stats .tile-red {
+    background: $brand-danger;
+  }
+
+}
+
+.tile-two {
+  .progress {
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  i {
+    font-size: 16px;
+  }
+
+  small {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: $white;
+  }
+
+}
+
+.tile-three {
+  display: table;
+
+  .tile-icon {
+    display: table-cell;
+    padding-top: 5px;
+  }
+  .tile-content {
+    display: table-cell;
+    padding-left: 20px;
+
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0px;
+    }
+
+    p {
+      margin: 0px;
+      text-transform: uppercase;
+      color: $gray-light;
+    }
+  }
+
+}
+
+.tile-four {
+  display: table;
+  .easy-pie-small {
+    display: table-cell;
+  }
+  .tile-content {
+    display: table-cell;
+    padding-left: 20px;
+
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0px;
+    }
+
+    p {
+      margin: 0px;
+      text-transform: uppercase;
+      color: $gray-light;
+      font-size: 12px;
+    }
+  }
+}
+
+.tile-five {
+  width: 100%;
+  padding: 10px 10px 0px 10px;
+
+  .sparkline {
+    position: absolute;
+    width: 80px;
+    right: 30px;
+    top: 10px;
+  }
+  .tile-content {
+    display: block;
+    width: 50%;
+
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0px;
+    }
+    p {
+      margin: 0px;
+      text-transform: uppercase;
+      color: $gray-light;
+      font-size: 12px;
+    }
+  }
+}

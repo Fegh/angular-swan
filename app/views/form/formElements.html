@@ -1,0 +1,551 @@
+<section class="page-title">
+  <h3>Form</h3>
+  <ol class="breadcrumb">
+    <li><a ui-sref="app.dashboard">Dashboard</a></li>
+    <li class="active">Form</li>
+  </ol>
+  <div class="clearfix"></div>
+</section>
+<section class="content" data-ng-controller="formCtrl">
+  <div class="row">
+    <div class="col-xs-12 col-sm-3 col-md-3">
+      <div class="panel">
+        <div class="panel-heading"> Baisc <strong>Form</strong></div>
+        <div class="panel-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail">Your Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail" placeholder="Your email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword">Your Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword" placeholder="Your Password">
+            </div>
+            <div class="form-group">
+              <label for="Placeholder">Placeholder</label>
+              <input type="text" placeholder="You can put anything here" id="Placeholder" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="Disabled">Disabled</label>
+              <input type="text" class="form-control" id="Disabled" disabled>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--panel-->
+    </div>
+    <!--col-->
+    <div class="col-xs-12 col-sm-3 col-md-3">
+      <div class="panel">
+        <div class="panel-heading"> Input Size</div>
+        <div class="panel-body">
+          <form>
+            <p><input class="form-control input-lg" type="text" placeholder=".input-lg"></p>
+
+            <p><input class="form-control" type="text" placeholder="Default input"></p>
+
+            <p><input class="form-control input-sm" type="text" placeholder=".input-sm"></p>
+
+            <p>
+              <select class="form-control input-lg">
+                <option value="">.select-lg</option>
+              </select>
+            </p>
+            <p>
+              <select class="form-control">
+                <option value="">Default select</option>
+              </select>
+            </p>
+            <p>
+              <select class="form-control input-sm">
+                <option value="">.select-sm</option>
+              </select>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--panel-->
+    </div>
+    <!--col-->
+    <div class="col-xs-12 col-sm-3 col-md-3">
+      <div class="panel">
+        <div class="panel-heading">Form Options</div>
+        <div class="panel-body">
+          <div class="input-group transparent">
+              <span class="input-group-addon">
+                <i class="fa fa-instagram"></i>
+              </span>
+            <input type="text" class="form-control" placeholder="Username">
+          </div>
+          <br>
+
+          <div class="input-group">
+            <span class="input-group-addon info">
+              <span class="arrow"></span>
+                <i class="fa fa-align-justify"></i>
+             </span>
+            <input type="text" class="form-control" placeholder="Username">
+          </div>
+          <br>
+
+          <div class="input-group">
+            <span class="input-group-addon warning">
+              <span class="arrow"></span>
+                <i class="fa fa-align-justify"></i>
+             </span>
+            <input type="text" class="form-control" placeholder="Username">
+          </div>
+          <br>
+
+          <div class="input-group">
+            <span class="input-group-addon danger">
+              <span class="arrow"></span>
+                <i class="fa fa-align-justify"></i>
+             </span>
+            <input type="text" class="form-control" placeholder="Username">
+          </div>
+          <br>
+
+          <div class="input-group">
+            <span class="input-group-addon primary">
+              <span class="arrow"></span>
+                <i class="fa fa-align-justify"></i>
+             </span>
+            <input type="text" class="form-control" placeholder="Username">
+          </div>
+          <br>
+
+          <div class="input-group">
+            <input type="text" class="form-control">
+               <span class="input-group-addon success">
+                 <span class="arrow"></span>
+                 <i class="fa fa-align-justify"></i>
+             </span>
+          </div>
+          <br>
+        </div>
+      </div>
+      <!--panel-->
+    </div>
+    <!--col-->
+    <div class="col-xs-12 col-sm-3 col-md-3">
+      <div class="panel">
+        <div class="panel-heading">Form Options</div>
+        <div class="panel-body">
+          <div class="form-group has-success has-feedback no-margin">
+            <input type="text" class="form-control" id="inputSuccess5" aria-describedby="inputSuccess5Status">
+            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+            <span id="inputSuccess5Status" class="sr-only">(success)</span>
+          </div>
+          <br/>
+
+          <div class="form-group has-warning has-feedback no-margin">
+            <input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status">
+            <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+            <span id="inputWarning2Status" class="sr-only">(warning)</span>
+          </div>
+          <br/>
+
+          <div class="form-group has-error has-feedback no-margin">
+            <input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status">
+            <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+            <span id="inputError2Status" class="sr-only">(error)</span>
+          </div>
+        </div>
+      </div>
+      <!--panel-->
+    </div>
+    <!--col-->
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <div class="panel">
+        <div class="panel-heading"> CheckBox Option</div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-3">
+              <div class="checkbox check-default">
+                <input id="checkbox1" type="checkbox" value="1">
+                <label for="checkbox1">Keep Me Signed in</label>
+              </div>
+              <div class="checkbox check-success 	">
+                <input id="checkbox2" type="checkbox" value="1" checked="checked">
+                <label for="checkbox2">I agree</label>
+              </div>
+              <div class="checkbox check-primary">
+                <input id="checkbox3" type="checkbox" value="1">
+                <label for="checkbox3">Mark</label>
+              </div>
+              <div class="checkbox check-info">
+                <input id="checkbox4" type="checkbox" value="1">
+                <label for="checkbox4">Steve Jobs </label>
+              </div>
+              <div class="checkbox check-warning">
+                <input id="checkbox5" type="checkbox" value="1" checked="checked">
+                <label for="checkbox5">Action</label>
+              </div>
+              <div class="checkbox check-danger">
+                <input id="checkbox6" type="checkbox" value="1" checked="checked">
+                <label for="checkbox6">Mark as read</label>
+              </div>
+            </div>
+            <!--col-->
+            <div class="col-xs-12 col-sm-3 col-md-3">
+              <div class="checkbox check-default checkbox-circle">
+                <input id="checkbox7" type="checkbox" value="1" checked="checked">
+                <label for="checkbox7">Keep Me Signed in</label>
+              </div>
+              <div class="checkbox check-success checkbox-circle">
+                <input id="checkbox8" type="checkbox" value="1">
+                <label for="checkbox8">I agree</label>
+              </div>
+              <div class="checkbox check-primary checkbox-circle">
+                <input id="checkbox9" type="checkbox" value="1" checked="checked">
+                <label for="checkbox9">Mark</label>
+              </div>
+            </div>
+            <!--col-->
+            <div class="col-xs-12 col-sm-3 col-md-3">
+              <div class="checkbox check-success">
+                <input id="check1" type="checkbox" name="check" value="check1" disabled="disabled">
+                <label for="check1">Checkbox No. 1</label>
+                <br>
+                <input id="check2" type="checkbox" name="check" value="check2" checked="checked"
+                       disabled="disabled">
+                <label for="check2">Checkbox No. 2</label>
+              </div>
+            </div>
+            <!--col-->
+            <div class="col-xs-12 col-sm-3 col-md-3">
+              <div class="radio">
+                <input id="male" type="radio" name="gender" value="male" checked="checked">
+                <label for="male">Male</label>
+                <input id="female" type="radio" name="gender" value="female">
+                <label for="female">Female</label>
+              </div>
+              <br/>
+
+              <div class="radio radio-success">
+                <input id="yes" type="radio" name="optionyes" value="yes">
+                <label for="yes">Agree</label>
+                <input id="no" type="radio" name="optionyes" value="no" checked="checked">
+                <label for="no">Disagree</label>
+              </div>
+              <br/>
+
+              <div class="radio radio-primary">
+                <input id="Disabled1" type="radio" name="Disabled" value="Disabled" disabled="disabled">
+                <label for="Disabled1">Disabled</label>
+                <input id="ADisabled" type="radio" name="ADisabled" value="ADisabled" checked="checked"
+                       disabled="disabled">
+                <label for="ADisabled">Disabled</label>
+              </div>
+            </div>
+            <!--col-->
+          </div>
+          <!--row-->
+        </div>
+      </div>
+      <!--panel-->
+    </div>
+    <!--col-->
+    <div class="col-xs-12 col-sm-6 col-md-6">
+      <div class="panel">
+        <div class="panel-heading">UI-Select</div>
+        <div class="panel-body">
+          <h4>Select2 theme</h4>
+          <ui-select ng-model="person.selected">
+            <ui-select-match placeholder="Pick one...">{{$select.selected.name}}</ui-select-match>
+            <ui-select-choices repeat="person in people | filter: $select.search track by person.name">
+              <div ng-bind-html="person.name | highlight: $select.search"></div>
+              <div ng-bind-html="person.email | highlight: $select.search"></div>
+            </ui-select-choices>
+          </ui-select>
+
+          <br/>
+
+          <h4>Tagging Select2</h4>
+          <ui-select multiple tagging tagging-label="(custom 'new' label)" ng-model="multipleDemo.colors">
+            <ui-select-match placeholder="Select colors...">{{$item}}</ui-select-match>
+            <ui-select-choices repeat="color in availableColors | filter:$select.search">
+              {{color}}
+            </ui-select-choices>
+          </ui-select>
+          <br/>
+          <br/>
+
+        </div>
+      </div>
+      <!--panel-->
+    </div>
+    <!--col-->
+    <div class="col-xs-12 col-sm-6 col-md-6">
+      <div class="panel">
+        <div class="panel-heading"> Input helper</div>
+        <div class="panel-body">
+          <form>
+            <div class="form-group">
+              <label for="dateFormat">Date</label>
+              <input type="text" class="form-control" id="dateFormat" ng-model="dateFormat"
+                     input-mask="dateFormatOption"/>
+            </div>
+            <div class="form-group">
+              <label for="Telephone">Telephone</label>
+              <input type="text" class="form-control" id="Telephone" ng-model="telephone"
+                     input-mask="'mask'" mask-option="telephoneOption">
+            </div>
+            <div class="form-group">
+              <label for="Number">Social Security Number</label>
+              <input type="text" class="form-control" id="Number" ng-model="number"
+                     input-mask="numberOption">
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--panel-->
+    </div>
+    <!--col-->
+    <div class="col-xs-12 col-sm-6 col-md-6">
+      <div class="panel">
+        <div class="panel-heading">Datapicker</div>
+        <div class="panel-body">
+          <div ng-controller="DatepickerDemoCtrl">
+            <pre>Selected date is: <em>{{dt | date:'fullDate' }}</em></pre>
+
+            <h4>Inline</h4>
+
+            <div style="display:inline-block; min-height:290px;">
+              <datepicker ng-model="dt" min-date="minDate" show-weeks="true"
+                          class=" dataPicker"></datepicker>
+            </div>
+
+            <h4>Popup</h4>
+
+            <div class="row">
+              <div class="col-md-6">
+                <p class="input-group dataPicker">
+                  <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt"
+                         is-open="opened"
+                         min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions"
+                         date-disabled="disabled(date, mode)" ng-required="true" close-text="Close"/>
+                                  <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success" ng-click="open($event)"><i
+                                      class="glyphicon glyphicon-calendar"></i></button>
+                                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <label>Format:</label>
+                <select class="form-control" ng-model="format"
+                        ng-options="f for f in formats">
+                  <option></option>
+                </select>
+              </div>
+            </div>
+
+            <hr/>
+            <button type="button" class="btn btn-sm btn-info" ng-click="today()">Today</button>
+            <button type="button" class="btn btn-sm btn-default" ng-click="dt = '2009-08-24'">2009-08-24
+            </button>
+            <button type="button" class="btn btn-sm btn-danger" ng-click="clear()">Clear</button>
+            <button type="button" class="btn btn-sm btn-default" ng-click="toggleMin()"
+                    tooltip="After today restriction">
+              Min date
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--panel-->
+    </div>
+    <!--col-->
+    <div class="col-xs-12 col-sm-6 col-md-6">
+      <div class="panel">
+        <div class="panel-heading">Rating</div>
+        <div class="panel-body">
+          <div ng-controller="RatingDemoCtrl">
+            <h4>Default</h4>
+            <rating ng-model="rate" max="max" readonly="isReadonly" on-hover="hoveringOver(value)"
+                    on-leave="overStar = null"></rating>
+                <span class="label"
+                      ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}"
+                      ng-show="overStar && !isReadonly">{{percent}}%</span>
+
+                <pre style="margin:15px 0;">Rate: <b>{{rate}}</b> - Readonly is: <i>{{isReadonly}}</i> - Hovering over: <b>{{overStar
+                  || "none"}}</b></pre>
+
+            <button class="btn btn-sm btn-danger" ng-click="rate = 0" ng-disabled="isReadonly">Clear</button>
+            <button class="btn btn-sm btn-default" ng-click="isReadonly = ! isReadonly">Toggle Readonly</button>
+            <hr/>
+
+            <h4>Custom icons</h4>
+
+            <div ng-init="x = 5">
+              <rating ng-model="x" max="15" state-on="'glyphicon-ok-sign'"
+                      state-off="'glyphicon-ok-circle'"></rating>
+              <b>(<i>Rate:</i> {{x}})</b></div>
+            <div ng-init="y = 2">
+              <rating ng-model="y" rating-states="ratingStates"></rating>
+              <b>(<i>Rate:</i> {{y}})</b></div>
+          </div>
+        </div>
+      </div>
+      <!--panel-->
+      <div class="panel">
+        <div class="panel-heading">Timepicker</div>
+        <div class="panel-body">
+          <div ng-controller="TimepickerDemoCtrl">
+            <div class="row">
+              <div class="col-xs-12">
+                <timepicker ng-model="mytime" ng-change="changed()" hour-step="hstep" minute-step="mstep"
+                            show-meridian="ismeridian"></timepicker>
+
+              </div>
+              <div class="col-xs-12">
+                Hours step is:
+                <select class="form-control" ng-model="hstep"
+                        ng-options="opt for opt in options.hstep"></select>
+                <br/>
+                Minutes step is:
+                <select class="form-control" ng-model="mstep"
+                        ng-options="opt for opt in options.mstep"></select>
+              </div>
+            </div>
+            <pre class="alert alert-info">Time is: {{mytime | date:'shortTime' }}</pre>
+            <button class="btn btn-info" ng-click="toggleMode()">12H / 24H</button>
+            <button class="btn btn-default" ng-click="update()">Set to 14:00</button>
+            <button class="btn btn-danger" ng-click="clear()">Clear</button>
+
+          </div>
+        </div>
+      </div>
+      <!--panel-->
+    </div>
+    <!--col-->
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <div class="panel">
+        <div class="panel-heading">Angular file upload</div>
+        <div class="panel-body" data-ng-controller="uploadCtrl">
+          <!----------uploader------------>
+          <p><strong>Angular File Upload</strong> is a module for the <a href="http://angularjs.org/">AngularJS</a>
+            framework.
+            Supports drag-n-drop upload, upload progress, validation filters and a file upload queue. It supports
+            native
+            HTML5 uploads, but degrades to a legacy iframe upload method for older browsers.
+            Works with any server side platform which supports standard HTML form uploads.</p>
+
+          <div class="row">
+            <div class="col-md-3">
+              <h3>Select files</h3>
+
+              <div ng-show="uploader.isHTML5">
+                <div nv-file-drop="" uploader="uploader" options="{ url: '/foo' }">
+                  <div nv-file-over="" uploader="uploader" over-class="another-file-over-class"
+                       class="well my-drop-zone">
+                    Another drop zone with its own settings
+                  </div>
+                </div>
+              </div>
+              Multiple
+              <input type="file" nv-file-select="" uploader="uploader" multiple/><br/>
+
+              Single
+              <input type="file" nv-file-select="" uploader="uploader"/>
+            </div>
+
+            <div class="col-md-9" style="margin-bottom: 40px">
+
+              <h3>Upload queue</h3>
+
+              <p>Queue length: {{ uploader.queue.length }}</p>
+
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th width="50%">Name</th>
+                    <th ng-show="uploader.isHTML5">Size</th>
+                    <th ng-show="uploader.isHTML5">Progress</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-repeat="item in uploader.queue">
+                    <td><strong>{{ item.file.name }}</strong></td>
+                    <td ng-show="uploader.isHTML5" nowrap>{{ item.file.size/1024/1024|number:2 }} MB</td>
+                    <td ng-show="uploader.isHTML5">
+                      <div class="progress" style="margin-bottom: 0;">
+                        <div class="progress-bar" role="progressbar"
+                             ng-style="{ 'width': item.progress + '%' }"></div>
+                      </div>
+                    </td>
+                    <td class="text-center">
+                      <span ng-show="item.isSuccess"><i class="glyphicon glyphicon-ok"></i></span>
+                      <span ng-show="item.isCancel"><i class="glyphicon glyphicon-ban-circle"></i></span>
+                      <span ng-show="item.isError"><i class="glyphicon glyphicon-remove"></i></span>
+                    </td>
+                    <td nowrap>
+                      <button type="button" class="btn btn-success btn-xs" ng-click="item.upload()"
+                              ng-disabled="item.isReady || item.isUploading || item.isSuccess">
+                        <span class="glyphicon glyphicon-upload"></span> Upload
+                      </button>
+                      <button type="button" class="btn btn-warning btn-xs" ng-click="item.cancel()"
+                              ng-disabled="!item.isUploading">
+                        <span class="glyphicon glyphicon-ban-circle"></span> Cancel
+                      </button>
+                      <button type="button" class="btn btn-danger btn-xs" ng-click="item.remove()">
+                        <span class="glyphicon glyphicon-trash"></span> Remove
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div>
+                <div>
+                  Queue progress:
+                  <div class="progress" style="">
+                    <div class="progress-bar" role="progressbar"
+                         ng-style="{ 'width': uploader.progress + '%' }"></div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-success btn-s" ng-click="uploader.uploadAll()"
+                        ng-disabled="!uploader.getNotUploadedItems().length">
+                  <span class="glyphicon glyphicon-upload"></span> Upload all
+                </button>
+                <button type="button" class="btn btn-warning btn-s" ng-click="uploader.cancelAll()"
+                        ng-disabled="!uploader.isUploading">
+                  <span class="glyphicon glyphicon-ban-circle"></span> Cancel all
+                </button>
+                <button type="button" class="btn btn-danger btn-s" ng-click="uploader.clearQueue()"
+                        ng-disabled="!uploader.queue.length">
+                  <span class="glyphicon glyphicon-trash"></span> Remove all
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+          <!----------uploader------------>
+        </div>
+      </div>
+      <!--panel-->
+    </div>
+    <!--col-->
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <div class="panel">
+        <div class="panel-heading"> HTML5 WYSIWYG</div>
+        <div class="panel-body">
+          <p class="repository-description">
+            A radically powerful Text-Editor/Wysiwyg editor for Angular.js! Create multiple editor instances,
+            two-way-bind HTML content, watch editors for changes and more!
+          </p>
+
+          <div text-angular ng-model="htmlVariable" class="m-b-20"></div>
+        </div>
+      </div>
+      <!--panel-->
+    </div>
+    <!--col-->
+  </div>
+  <!--row-->
+</section>

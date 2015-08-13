@@ -1,0 +1,133 @@
+.chat-window-wrapper {
+  overflow: hidden;
+
+  input[type="text"], .chat-window-wrapper input[type="password"], .chat-window-wrapper input[type="date"], .chat-window-wrapper input[type="datetime"], .chat-window-wrapper input[type="email"], .chat-window-wrapper input[type="number"], .chat-window-wrapper input[type="search"], .chat-window-wrapper input[type="tel"], .chat-window-wrapper input[type="time"], .chat-window-wrapper input[type="url"], .chat-window-wrapper textarea, .chat-window-wrapper select {
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 35px;
+    border: none;
+  }
+  .chat-header {
+    height: 50px;
+    input[type="text"] {
+      margin: 5%;
+      width: 90%;
+      &:focus {
+        background-color: $page-bg;
+      }
+    }
+  }
+  .chat-group {
+    .list-group-item {
+      padding: 8px 25px;
+
+      &:hover,
+      &:focus,
+      &.focus,
+      &:active,
+      &.active, {
+        background-color: rgba(0, 0, 0, 0.1);
+        color: #fff;
+      }
+    }
+  }
+
+  .list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 10px 10px 25px;
+    margin-bottom: -1px;
+    background-color: transparent;
+    border: 0px solid $list-group-border;
+    @include border-top-radius($list-group-border-radius);
+    @include border-bottom-radius($list-group-border-radius);
+
+    color: $gray-lighter;
+
+    // Round the first and last items
+    &:first-child {
+      @include border-bottom-radius($list-group-border-radius);
+      @include border-top-radius($list-group-border-radius);
+    }
+    &:last-child {
+      margin-bottom: 0;
+      @include border-top-radius($list-group-border-radius);
+      @include border-bottom-radius($list-group-border-radius);
+    }
+
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .side-widget {
+    margin-top: 15px;
+    display: block;
+  }
+
+  .side-widget-content {
+    display: block;
+  }
+
+  .side-widget-title {
+    color: #808285;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    padding-left: 31px;
+    padding-right: 31px;
+    text-transform: uppercase;
+  }
+
+  .user-profile {
+    display: inline-block;
+    float: left;
+    border-radius: 100px 100px 100px 100px;
+    height: 35px;
+    overflow: hidden;
+    width: 35px;
+    margin-right: 13px;
+  }
+
+  .user-details {
+    display: inline-block;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .user-name {
+    width: 120px;
+    color: #D5D7E4;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+  }
+
+  .user-more {
+    display: block;
+    color: #7E8696;
+    font-size: 12px;
+    width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+  }
+  .user-details-status-wrapper {
+    display: inline-block;
+    float: left;
+    min-width: 32px;
+    margin-top: 8px;
+  }
+  .user-details-count-wrapper {
+    display: inline-block;
+    position: absolute;
+    right: 25px;
+  }
+}

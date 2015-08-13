@@ -1,0 +1,164 @@
+$accent-color: #61C7B3;
+
+$color-light-grey: #EFEFEF;
+$color-dark-grey: #888;
+$color-red: #D23B3D;
+$color-orange: #E2A917;
+$color-blue: #1BC3E1;
+$color-green: #9AE14F;
+
+$sidebar-background: #1D2127;
+$sidebar-text-color: #ABB4BE;
+$sidebar-dark-text-color: #465162;
+
+$sidebar-width: 300px;
+$sidebar-padding: 50px;
+
+.mail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: $nav-bg;
+  transition-duration: .3s;
+  z-index: 5;
+
+  .logo {
+    width: 100%;
+    height: 55px;
+    padding: 10px;
+    font-size: 22px;
+    color: lighten($nav-bg, 50%);
+    text-transform: uppercase;
+    text-align: center;
+    background: darken($nav-bg, 10%);
+
+  }
+
+  &, & a {
+    color: lighten($nav-bg, 50%);
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  a.offline {
+    color: lighten($nav-bg, 20%);
+
+    &:hover {
+      text-decoration: none;
+      color: $brand-success;
+    }
+  }
+
+  .logo-container {
+    font-weight: 100;
+    font-size: 50px;
+    line-height: 40px;
+    text-align: center;
+    margin: 40px 0px 40px 0px;
+    cursor: pointer;
+
+    .MailLogo {
+      position: relative;
+      top: -6px;
+      font-size: 25px;
+      margin-right: 15px;
+      padding: 10px;
+      border: 2px solid $brand-success;
+      border-radius: 100px;
+      text-indent: 1px;
+      color: $brand-success;
+    }
+  }
+
+  .compose-button {
+    border-radius: 100px;
+    padding: 13px 20px;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $brand-success;
+    border: 2px solid $brand-success;
+    display: block;
+    margin: 0 ($sidebar-padding - 20px) ($sidebar-padding - 20px) ($sidebar-padding - 20px);
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: none;
+      color: $brand-info;
+      border-color: $brand-info;
+    }
+  }
+
+}
+
+.menu {
+  clear: both;
+  width: 100%;
+
+  ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+  }
+
+  li {
+    display: block;
+    width: 100%;
+
+    &:hover
+    &:active,
+    &.active,
+    {
+      text-decoration: none;
+      background: lighten($nav-bg, 5%);
+    }
+
+    a {
+      width: 100%;
+      display: block;
+      font-weight: 500;
+      font-size: 15px;
+      padding: 12px $sidebar-padding 12px $sidebar-padding;
+
+      &:hover {
+        text-decoration: none;
+        background: lighten($nav-bg, 5%);
+      }
+
+      .fa {
+        font-size: 12px;
+      }
+    }
+
+    &.title {
+      display: block;
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: lighten($nav-bg, 20%);
+      padding: 12px $sidebar-padding 12px $sidebar-padding;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+
+  }
+
+}
+
+.separator {
+  clear: both;
+  margin: 30px 35px;
+  height: 1px;
+  background: lighten($nav-bg, 8%);
+}
+
+.bottom-padding {
+  height: 100px;
+}

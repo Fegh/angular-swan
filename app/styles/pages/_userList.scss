@@ -1,0 +1,165 @@
+
+.userList {
+  .userOperate {
+    a {
+      color: #cccccc;
+      &:hover,
+      &:active, {
+        text-decoration: none;
+        color: $brand-info;
+      }
+    }
+  }
+  .userImg {
+    clear: both;
+    margin: 0px auto;
+    padding: 10px;
+    text-align: center;
+
+    a {
+      color: $headings-color;
+      &:hover,
+      &:active, {
+        text-decoration: none;
+        color: $brand-info;
+      }
+    }
+
+  }
+
+}
+
+.writePost {
+
+  textarea {
+    border: 0px !important;
+  }
+  .panel-footer {
+    border: 0px !important;
+    background: $header-bg;
+  }
+
+}
+
+/**** User Profile ****/
+
+.follow {
+  text-align: center;
+  margin-top: 10px;
+
+  a {
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+
+  .btn {
+    width: 240px;
+  }
+
+}
+
+.user-profile-pic-normal {
+  border-radius: 100px 100px 100px 100px;
+  height: 35px;
+  overflow: hidden;
+  width: 35px;
+}
+
+.user-status-box {
+  border: none;
+  border-radius: none;
+  margin: 0;
+}
+
+.post {
+  display: block;
+}
+
+.post .info-wrapper {
+  display: inline-block;
+  float: left;
+  width: 85%;
+}
+
+.post .username {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.post .info {
+  display: block;
+}
+
+.post .user-profile-pic-wrapper {
+  display: inline-block;
+  float: left;
+  margin-right: 16px;
+}
+
+.post .more-details {
+  display: block;
+  float: left
+}
+
+.post .post-links li {
+  display: inline;
+  float: left;
+  position: relative;
+}
+
+.post .post-links {
+  margin: 4px 0 0;
+  list-style: none;
+  font-size: 11px;
+  padding: 0;
+}
+
+.post .post-links li {
+  display: inline;
+  float: left;
+  position: relative;
+  padding-left: 0px;
+  padding-right: 8px;
+}
+
+.post .post-links li:after {
+  color: #999999;
+  content: "·";
+  padding-left: 8px;
+}
+
+.post .post-links li:last-child:after {
+  content: "";
+}
+
+.post .dark-text {
+  color: #2a2e36;
+}
+
+.post .action-bar {
+  display: block;
+  list-style: none;
+  margin: 13px 0 37px;
+  font-size: 12px;
+  padding: 0;
+}
+
+.post .action-bar li {
+  display: inline;
+  float: left;
+  position: relative;
+  padding-right: 8px;
+}
+
+.post-input {
+  padding-left: 14px !important;
+  padding-top: 18px !important;
+  font-size: 14px;
+}
+
+.comments-section {
+  margin-top: 12px;
+}

@@ -1,0 +1,32 @@
+
+.progress{
+  height: 14px;
+  background-color:#ebeef1;
+  background-image:none;
+  box-shadow:none;
+  line-height: 16px;
+}
+.progress.no-radius{
+  border-radius:0px;
+}
+.progress.no-radius .progress-bar{
+  border-radius:0px;
+}
+.progress.transparent{
+  background-color:rgba(0, 0, 0, 0.28);
+}
+.progress.progress-small{
+  height: 4px;
+}
+.progress.progress-large{
+  height: 20px;
+}
+
+.progress-bar {
+  line-height: 15px;
+}
+
+.progress-bar-white {
+
+  @include progress-bar-variant($white);
+}

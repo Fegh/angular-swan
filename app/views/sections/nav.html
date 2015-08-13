@@ -1,0 +1,119 @@
+<section data-slim-scroll-body class="nav-wrapper scrollable">
+  <div class="logo">
+    <img ng-src="images/logo.png" width="200"/>
+  </div>
+  <div class="user">
+    <img ng-src="images/a.jpg" width="80"/>
+
+    <p>admin@admin.com <i class="fa fa-chevron-down m-l-10"></i></p>
+  </div>
+  <div class="">
+    <ul class="nav" data-collapse-nav>
+      <li class="title">brower</li>
+      <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'>
+        <a ui-sref="app.dashboard"><i class="icon-home m-r-10"></i>Dashboard </a>
+      </li>
+      <li>
+        <a>
+          <i class="icon-envelope m-r-10"></i>Email<i class="fa pull-right fa-angle-right"></i>
+        </a>
+        <ul class="sub-menu">
+          <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="email">email</a></li>
+          <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="sendEmail">sendEmail</a></li>
+          <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="emailContent">emailContent</a>
+          </li>
+        </ul>
+      </li>
+      <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'>
+        <a ui-sref="app.widget">
+          <i class="icon-grid m-r-10"></i>Widget<span class="badge badge-success">new</span></a>
+      </li>
+      <li>
+        <a>
+          <i class="icon-globe m-r-10"></i>UI Elements<i class="fa pull-right fa-angle-right"></i>
+        </a>
+        <ul class="sub-menu">
+          <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="app.button">button</a></li>
+          <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="app.typography">typography</a>
+          </li>
+          <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="app.panel">panel</a></li>
+          <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="app.icon">icon</a></li>
+          <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="app.grid">grid</a></li>
+          <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="app.messageNotifications">message
+            Notifications</a></li>
+          <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="app.slider">slider</a></li>
+          <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="app.tabsAccordian">tabs
+            Accordian</a></li>
+        </ul>
+      </li>
+      <li>
+        <a>
+          <i class="icon-paper-clip m-r-10"></i>Forms <i class="fa fa-angle-right pull-right"></i></a>
+        <ul class="sub-menu">
+          <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="app.formElements">form
+            Elements</a></li>
+          <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="app.formValidations">form
+            Validations</a></li>
+        </ul>
+      </li>
+      <li>
+        <a>
+          <i class=" icon-pie-chart m-r-10"></i>Charts <i class="fa fa-angle-right pull-right"></i></a>
+        <ul class="sub-menu">
+          <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="app.chart">chart</a></li>
+          <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="app.n3Chart">n3-chart</a></li>
+        </ul>
+      </li>
+      <li>
+        <a>
+          <i class="icon-list m-r-10"></i>Table <i class="fa fa-angle-right pull-right"></i></a>
+        <ul class="sub-menu">
+          <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="app.table">table</a></li>
+          <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="app.dataTable">dataTable</a>
+            <!-- <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="app.uiGrid">uiGrid</a>-->
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a ui-sref="app.timeLine" ui-turn-off='uiSidebarLeft' ui-sref-active="active">
+          <i class="icon-speedometer m-r-10"></i>TimeLine<span class="badge badge-purple">8</span></a>
+      </li>
+      <li>
+        <a ui-sref="app.map" ui-turn-off='uiSidebarLeft' ui-sref-active="active">
+          <i class=" icon-drawer m-r-10"></i>Map</a>
+      </li>
+      <li>
+        <a>
+          <i class=" icon-docs m-r-10"></i>Pages<i class="fa fa-angle-right pull-right"></i></a>
+        <ul class="sub-menu">
+          <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="app.userList">userList</a></li>
+          <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="app.userProfile">userProfile</a>
+          </li>
+          <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="app.post">post</a></li>
+          <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="app.price">price</a></li>
+          <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="app.invoice">invoice</a></li>
+          <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="404">404</a></li>
+          <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="505">505</a></li>
+          <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="error">error</a></li>
+          <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="signIn">signIn</a></li>
+          <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="signUp">signUp</a></li>
+          <li ui-sref-active="active" ui-turn-off='uiSidebarLeft'><a ui-sref="lockScreen">lockScreen</a></li>
+        </ul>
+      </li>
+    </ul>
+    <br/>
+
+    <div class="menu">
+      <ul class="labels">
+        <li class="title">Labels <i class="fa fa-plus pull-right "></i></li>
+        <li><a href="#"><i class="fa fa-circle text-green m-r-20"></i>Dribbble </a></li>
+        <li><a href="#"><i class="fa fa-circle text-lightBlue m-r-20"></i>Behances</a></li>
+        <li><a href="#"><i class="fa fa-circle text-purple m-r-20"></i>Bootstrap </a></li>
+        <li><a href="#"><i class="fa fa-circle text-blue m-r-20"></i>AngularJS </a></li>
+        <!--                <li><a href="#"><i class="fa fa-circle text-yellow m-r-20"></i>Jauery </a></li>
+								<li><a href="#"><i class="fa fa-circle text-orange m-r-20"></i>AngularJS </a></li>
+								<li><a href="#"><i class="fa fa-circle text-red m-r-20"></i>Fontawesome </a></li>-->
+      </ul>
+    </div>
+  </div>
+</section>

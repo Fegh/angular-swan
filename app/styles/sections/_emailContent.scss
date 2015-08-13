@@ -1,0 +1,245 @@
+.mailWrapper {
+  margin: 20px;
+  background-color: $white;
+  border-radius: 3px;
+  padding-bottom: 20px;
+
+  .header {
+    padding: 25px;
+    border-bottom: 1px solid $line;
+    overflow: hidden;
+    position: relative;
+
+    .mail-title {
+      display: block;
+      text-transform: uppercase;
+      color: lighten($nav-bg, 40%);
+    }
+
+    .icon {
+      font-size: 15px;
+      margin-left: 20px;
+      position: relative;
+      top: -5px;
+      cursor: pointer;
+      color: $brand-success;
+    }
+  }
+
+  .action-bar {
+    padding: 20px 50px 5px 0px;
+    overflow: hidden;
+
+    li {
+      float: left;
+      margin-right: 10px;
+      list-style: none;
+    }
+
+  }
+
+  .user {
+    float: left;
+    margin: 0px;
+    padding-bottom: 0px;
+
+    .userImg {
+      float: left;
+      display: block;
+      width: 60px;
+
+    }
+    .userInfo {
+      float: left;
+      display: block;
+      margin: 0px;
+      padding: 0px 15px;
+
+      .userHeading {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $gray-dark;
+      }
+
+    }
+
+    .userAction {
+      display: block;
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  .mailContent {
+    padding: 30px;
+  }
+
+}
+
+.mailList {
+  display: block;
+  margin: 0px;
+  padding: 0px 20px;
+  font-weight: 400;
+
+  .checkbox {
+    margin-left: 5px;
+  }
+
+  .checkbox label {
+    margin-bottom: 0px;
+  }
+
+  .star {
+    margin-top: -2px;
+  }
+
+  .table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: $line-height-computed;
+
+    > thead,
+    > tbody,
+    > tfoot {
+      > tr {
+        > th,
+        > td {
+          padding: 15px 15px;
+          line-height: $line-height-base;
+          vertical-align: top;
+          border-top: 1px solid transparent;
+          color: $text-color;
+        }
+      }
+    }
+    > thead > tr > th {
+      vertical-align: bottom;
+      border-bottom: 2px solid transparent;
+    }
+    > caption + thead,
+    > colgroup + thead,
+    > thead:first-child {
+      > tr:first-child {
+        > th,
+        > td {
+          border-top: 0;
+        }
+      }
+    }
+    > tbody + tbody {
+      border-top: 2px solid $table-border-color;
+    }
+
+    .table {
+      background-color: $body-bg;
+    }
+  }
+
+  td.clickable {
+    cursor: pointer;
+    color: #666;
+  }
+
+  tr.unread {
+    font-weight: bold;
+
+    color: $header-color;
+
+    .text-muted {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .table-hover {
+    > tbody > tr:hover {
+      background-color: lighten($nav-bg, 40%);
+    }
+  }
+
+  .table-striped {
+    > tbody > tr:nth-of-type(odd) {
+      background-color: lighten($nav-bg, 50%);
+      &:hover {
+        background-color: lighten($nav-bg, 40%);
+      }
+    }
+  }
+
+  .table td.small-cell, .table th.small-cell {
+    width: 40px;
+  }
+  .table th.medium-cell {
+    width: 132px;
+  }
+}
+
+.sendMail {
+  margin: 20px 40px;
+}
+
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+
+.blog-description {
+  font-size: 20px;
+  color: #999;
+}
+
+.blog-post {
+  margin-bottom: 60px;
+}
+
+.blog-post-title {
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+
+.blog-post-meta {
+  margin-bottom: 20px;
+  color: #999;
+}
+
+@media (max-width: $screen-md-min) {
+  .mailWrapper {
+
+    ul, ol {
+      padding: 0px;
+    }
+    .user .userAction {
+      position: relative;
+    }
+    .user .userInfo {
+      padding: 0px 10px;
+    }
+    .action-bar {
+      padding: 5px 0px;
+      overflow: hidden;
+      text-align: left;
+
+      li {
+        float: left;
+        margin-right: 2px;
+        list-style: none;
+      }
+    }
+  }
+
+}
+

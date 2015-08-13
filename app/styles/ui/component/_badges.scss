@@ -1,0 +1,51 @@
+.badge {
+  text-shadow: none;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  background-color: $header-color;
+  font-size: 11px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 2px;
+  color: $gray-lighter;
+}
+
+.badge-success {
+  background-color: $brand-success;
+  color: $white;
+}
+
+.badge-warning {
+  background-color: $brand-warning;
+  color: $white;
+}
+
+.badge-danger {
+  background-color: $brand-danger;
+  color: $white;
+}
+
+.badge-info {
+  background-color: $brand-success;
+  color: $white;
+}
+
+.badge-inverse {
+  background-color: $inverse;
+  color: $white;
+}
+
+.badge-purple {
+  background-color: $purple;
+  color: $white;
+}
+
+.badge-white {
+  background-color: $white;
+  color: $gray-light;
+}
+
+.badge-disable {
+  background-color: #2a2e36;
+  color: #8b91a0;
+}

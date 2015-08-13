@@ -1,0 +1,111 @@
+
+.sign {
+  width: 300px;
+  height: 360px;
+  @include transition(all .1s ease-in-out);
+
+  .sign_a a {
+    color: lighten($nav-bg, 30%);
+    &:hover,
+    &:active,
+    &.active {
+      color: $brand-success;
+    }
+  }
+  .sign-logo {
+    text-align: center;
+    line-height: 100px;
+  }
+  .form-group {
+    margin: 0px;
+  }
+  input {
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 0;
+  }
+  .checkbox input {
+    height: 20px;
+  }
+  span {
+    line-height: 50px;
+  }
+  .btn {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  p {
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+.signUp {
+
+  width: 300px;
+
+  .sign-logo {
+    line-height: 100px;
+    text-align: center;
+  }
+  .form-group {
+    margin: 0px;
+  }
+  .btn {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  input {
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    margin-bottom: 10px;
+    border: 0;
+  }
+}
+
+.lockScreen {
+  width: 300px;
+  height: 200px;
+
+  .form-control {
+    height: 42px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 0;
+  }
+
+  p {
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+  }
+
+}
+
+.error {
+  width: 300px;
+  height: 420px;
+  h1 {
+    text-transform: uppercase;
+    font-size: 160px;
+  }
+  h2 {
+    text-transform: uppercase;
+    font-size: 80px;
+  }
+  .text-shadow {
+
+    text-shadow: 0 1px 0 #dee5e7, 0 2px 0 #fcfdfd, 0 5px 10px rgba(0, 0, 0, 0.125), 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  .list-group {
+    a.list-group-item {
+      background: rgba(255, 255, 255, 0.05);
+      border: 0;
+      color: #888888;
+      &:hover,
+      &:active {
+        color: $brand-success;
+      }
+    }
+  }
+}

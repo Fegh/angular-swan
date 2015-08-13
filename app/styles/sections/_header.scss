@@ -1,0 +1,128 @@
+.navbar-app {
+  min-height: 50px;
+  background: $white;
+  border-width: 0px;
+  color: $link-color;
+  border-bottom: 1px solid $page-bg;
+}
+
+.header-right {
+  float: right;
+  padding: 0px;
+  margin: 0px;
+
+  .nav-pills {
+    > li {
+      float: left;
+      margin: 0px;
+
+      > a {
+        border-radius: 0;
+        padding: 12px 23px 18px 23px;
+        font-size: 16px;
+        color: $header-color;
+        border-top: 2px solid $white;
+
+        @include transition(all .2s ease-in-out);
+
+        &:hover,
+        &:focus, {
+          border-top: 2px solid $brand-success;
+          color: $brand-success;
+          background-color: darken($page-bg, 1%);
+        }
+
+        .badge {
+          position: absolute;
+          top: 5px;
+          right: 5px;
+        }
+      }
+
+      + li {
+        margin-left: 0px;
+      }
+
+      &.active > a {
+        &,
+        &:hover,
+        &:focus, {
+          border-top: 2px solid $brand-success;
+          color: $brand-success;
+          background-color: darken($page-bg, 1%);
+        }
+      }
+
+      &.user-profile {
+        padding: 10px 18px 9px 10px;
+        background-color: $white;
+
+        img {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+        }
+
+        .badge {
+          position: absolute;
+          top: 18px;
+          right: 5px;
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-app {
+    background: $nav-bg;
+    color: $white;
+    font-weight: bold;
+  }
+  .header-right {
+    background-color: $white;
+
+    .nav {
+      float: right;
+    }
+    .nav-pills {
+      > li {
+        > a {
+          border-top: 2px solid $nav-bg;
+
+          &:hover,
+          &:focus, {
+            border-top: 2px solid $nav-bg;
+            color: $brand-success;
+            background-color: $nav-bg;
+          }
+        }
+        &.searchInput,
+        &.dashboard,
+        &.notification,
+        &.email,
+        &.question {
+          display: none;
+        }
+        &.chat {
+          background-color: $nav-bg;
+
+        }
+        &.user-profile {
+          background-color: $nav-bg;
+        }
+      }
+    }
+  }
+  .navbar-app .btn-navbar,
+  .navbar-app .btn {
+    color: $header-color;
+  }
+  .navbar-app .btn-navbar:hover,
+  .navbar-app .btn:hover {
+    color: $brand-success;
+  }
+}
+
+

@@ -1,0 +1,47 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+
+//override bootstrap' style
+@import "global/var";//override bootstrap' variables.scss
+
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "simple-line-icons/scss/simple-line-icons.scss";
+// endbower
+
+@import
+  //custom component
+  "ui/ui",
+
+  //Plugins, override plugins'
+  "plugins/easyPie",
+  "plugins/sparklines",
+  "plugins/dataTables",
+  "plugins/select2",
+  "plugins/datePicker",
+  "plugins/timePicker",
+  "plugins/nspopover",
+  "plugins/angularChart",
+  "plugins/guage",
+  "plugins/timeLine",
+
+  //pages
+  "pages/icon",
+  "pages/sign",
+  "pages/userList",
+  "pages/slider",
+
+  //sections
+  "sections/header",
+  "sections/nav",
+  "sections/chat",
+  "sections/emailNav",
+  "sections/emailContent",
+  "sections/layout",
+  "sections/specialPageLayout",
+  "sections/status",
+  "sections/circle",
+  "sections/tiles",
+  "sections/animation",
+
+  //global
+  "global/utilities-page";

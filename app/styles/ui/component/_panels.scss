@@ -1,0 +1,174 @@
+.panel {
+  box-shadow: none;
+  border: $header-bg 1px solid;
+
+  .panel-heading {
+    font-size: 16px;
+    color: darken($headings-color, 10%);
+    background: $header-bg;
+  }
+}
+
+/*panel-blank*/
+
+.panel-blank {
+  @include panel-variant(transparent, $panel-default-text, transparent, transparent);
+}
+
+.panel-blank {
+  background: transparent;
+  & > .panel-heading {
+    border-bottom-color: $line;
+  }
+  + .panel-collapse > .panel-body {
+    border-top-color: $line;
+  }
+
+  & > .panel-footer {
+    border-top-color: $line;
+    background: transparent;
+  }
+}
+
+/*panel-white*/
+.panel-white {
+  @include panel-variant(#fff, $panel-default-text, $panel-default-heading-bg, #fff);
+}
+
+.panel-white, .panel {
+  .panel-body {
+    padding: 10px 15px 15px 15px;
+  }
+}
+
+// Panels-vertical-variant
+@mixin panel-vertical-variant($border) {
+  border-left: $border 4px solid;
+
+  & > .panel-heading {
+    background-color: #fff;
+    border-color: #fff;
+
+    + .panel-collapse > .panel-body {
+      border-top-color: #fff;
+    }
+  }
+  & > .panel-body {
+    padding: 10px 15px 15px 15px;
+  }
+}
+
+.panel-vertical-primary {
+  @include panel-vertical-variant($brand-primary);
+}
+
+.panel-vertical-success {
+  @include panel-vertical-variant($brand-success);
+}
+
+.panel-vertical-info {
+  @include panel-vertical-variant($brand-info);
+}
+
+.panel-vertical-warning {
+  @include panel-vertical-variant($brand-warning);
+}
+
+.panel-vertical-danger {
+  @include panel-vertical-variant($brand-danger);
+}
+
+// Panels-horizontal-variant
+@mixin panel-horizontal-variant($border) {
+  border-top: $border 4px solid;
+
+  & > .panel-heading {
+    background-color: #fff;
+    border-color: $line;
+
+    + .panel-collapse > .panel-body {
+      border-top-color: #fff;
+    }
+  }
+  & > .panel-body {
+    padding: 10px 15px 15px 15px;
+  }
+}
+
+.panel-horizontal-primary {
+  @include panel-horizontal-variant($brand-primary);
+}
+
+.panel-horizontal-success {
+  @include panel-horizontal-variant($brand-success);
+}
+
+.panel-horizontal-info {
+  @include panel-horizontal-variant($brand-info);
+}
+
+.panel-horizontal-warning {
+  @include panel-horizontal-variant($brand-warning);
+}
+
+.panel-horizontal-danger {
+  @include panel-horizontal-variant($brand-danger);
+}
+
+/*panel-bg */
+@mixin panel-bg-variant($border, $heading-text-color, $heading-bg-color, $heading-border) {
+  border-color: $border;
+  color: #ffffff;
+
+  & > .panel-heading {
+    color: $heading-text-color;
+    background-color: $heading-bg-color;
+    border-color: rgba(255, 255, 255, 0.35);
+
+    + .panel-collapse > .panel-body {
+      border-top-color: $border;
+      background-color: $heading-bg-color;
+    }
+    .badge {
+      color: $heading-bg-color;
+      background-color: $heading-bg-color;
+    }
+  }
+
+  & > .panel-body {
+    background-color: $heading-bg-color;
+  }
+  & > .panel-footer {
+    border-top: 0px;
+    background: darken($heading-bg-color, 2%);
+
+    + .panel-collapse > .panel-body {
+      border-bottom-color: $border;
+    }
+  }
+}
+
+.panel-bg-primary {
+  @include panel-bg-variant($brand-primary, $gray-lighter, $brand-primary, $brand-primary);
+}
+
+.panel-bg-success {
+  @include panel-bg-variant($brand-success, $gray-lighter, $brand-success, $brand-success);
+}
+
+.panel-bg-info {
+  @include panel-bg-variant($brand-info, $gray-lighter, $brand-info, $brand-info);
+}
+
+.panel-bg-warning {
+  @include panel-bg-variant($brand-warning, $gray-lighter, $brand-warning, $brand-warning);
+}
+
+.panel-bg-danger {
+  @include panel-bg-variant($brand-danger, $gray-lighter, $brand-danger, $brand-danger);
+}
+
+.panel-bg-purple {
+  @include panel-bg-variant($bg-purple, $gray-lighter, $bg-purple, $bg-purple);
+}
+

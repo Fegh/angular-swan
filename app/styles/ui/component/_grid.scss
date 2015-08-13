@@ -1,0 +1,12 @@
+.col-lg-2-4 {
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+@media screen and (min-width: 992px) {
+  .col-lg-2-4 {
+    float: left;
+    width: 20%;
+  }
+}

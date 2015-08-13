@@ -1,0 +1,18 @@
+.list-icon i {
+  display: inline-block;
+  font-size: 14px;
+  margin: 0;
+  text-align: center;
+  transition: font-size 0.2s ease 0s;
+  vertical-align: middle;
+  width: 40px;
+}
+
+.list-icon div {
+  line-height: 40px;
+  white-space: nowrap;
+}
+
+.list-icon div:hover i {
+  font-size: 26px;
+}

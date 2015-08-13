@@ -1,0 +1,202 @@
+<section class="page-title">
+  <h3>Slider</h3>
+  <ol class="breadcrumb">
+    <li><a ui-sref="app.dashboard">Dashboard</a></li>
+    <li class="active">Slider</li>
+  </ol>
+  <div class="clearfix"></div>
+</section>
+
+<section class="content">
+  <div class="row">
+
+    <div class="col-xs-12 col-sm-6 col-md-6">
+      <div class="panel" data-ng-controller="sliderCtrl">
+        <div class="panel-heading">Angular Slider</div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-12">
+              <h4>Default slider</h4>
+
+              <div range-slider min="0" max="100" model-min="demo1.min" model-max="demo1.max"></div>
+
+            </div>
+            <div class="col-md-12">
+              <p>And here are the values in our model being updated:</p>
+
+              <form class="form-inline">
+                <div class="form-group">
+                  <label for="min">Min</label>
+                  <input type="text" class="form-control" id="min" ng-model="demo1.min">
+                </div>
+                <div class="form-group">
+                  <label for="max">Max</label>
+                  <input type="text" class="form-control" id="max" ng-model="demo1.max">
+                </div>
+              </form>
+            </div>
+            <div class="col-md-12">
+              <h4>The sliders</h4>
+
+              <p>The value of the first slider is: <strong>{{demo6.valueA}}</strong>.</p>
+
+              <div range-slider min="0" max="10000" model-max="demo6.valueA" pin-handle="min"
+                   class="green"></div>
+              <p>The value of the first slider is:<strong>{{demo6.valueB}}</strong>.</p>
+
+              <div range-slider min="0" max="10000" model-min="demo6.valueB" pin-handle="max"
+                   class="green"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--panel-->
+    </div>
+    <!--col-->
+    <div class="col-xs-12 col-sm-6 col-md-6">
+      <div class="panel" data-ng-controller="sliderCtrl">
+        <div class="panel-heading">Vertical Slider</div>
+        <div class="panel-body">
+          <h4>Vertical slider</h4>
+
+          <p>Sliders having the option for both vertical and horizontal orientaion by simply changing the
+            <code>orientation</code></p>
+
+          <p class="m-l-20">
+
+          <div range-slider orientation="vertical" min="0" max="100" model-min="demo1.min"
+               model-max="demo1.max" class="pull-left m-r-10 green"></div>
+          <div range-slider orientation="vertical" min="0" max="100" model-min="demo2.min"
+               model-max="demo2.max" class="pull-left m-r-10 lightBlue"></div>
+          <div range-slider orientation="vertical" min="0" max="100" model-min="demo3.min"
+               model-max="demo3.max" class="pull-left m-r-10 yellow"></div>
+          <div range-slider orientation="vertical" min="0" max="100" model-min="demo4.min"
+               model-max="demo4.max" class="pull-left m-r-10 orange"></div>
+          <div range-slider orientation="vertical" min="0" max="100" model-min="demo5.min"
+               model-max="demo5.max" class="pull-left m-r-10 red"></div>
+          <div range-slider orientation="vertical" min="0" max="100" model-min="demo8.min"
+               model-max="demo8.max" class="pull-left m-r-10 purple"></div>
+          <div range-slider orientation="vertical" min="0" max="100" model-min="demo7.min"
+               model-max="demo7.max" class="pull-left m-r-10 inverse"></div>
+          </p>
+        </div>
+      </div>
+      <!--panel-->
+    </div>
+    <!--col-->
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <div class="panel">
+        <div class="panel-heading">ProgressBar</div>
+        <div class="panel-body" ng-controller="ProgressDemoCtrl">
+
+          <div class="row">
+            <div class="col-md-4">
+              <h3>Progess bar Colors</h3>
+
+              <p>Progress bars comes with customized colors and transparent background that would fit any
+                colored
+                widget or portlet</p>
+              <br>
+
+              <div class="col-md-11">
+                <div class="progress">
+                  <div style="width: 80%;" class="progress-bar progress-bar-success"></div>
+                </div>
+                <div class="progress">
+                  <div style="width: 60%;" class="progress-bar progress-bar-info"></div>
+                </div>
+                <div class="progress">
+                  <div style="width: 40%;" class="progress-bar progress-bar-warning"></div>
+                </div>
+                <div class="progress">
+                  <div style="width: 20%;" class="progress-bar progress-bar-danger"></div>
+                </div>
+              </div>
+            </div>
+            <!--col-->
+            <div class="col-md-4">
+              <div class="col-md-11">
+                <h3>Progess bar Sizes</h3>
+
+                <p>We have customized progress bars size to be more elegant and intuitive</p>
+                <br>
+
+                <p>Meet Steve</p>
+
+                <div class="progress progress-small">
+                  <div style="width: 45%;" class="progress-bar progress-bar-success"></div>
+                </div>
+                <div class="progress progress-small">
+                  <div style="width: 45%;" class="progress-bar progress-bar-danger"></div>
+                </div>
+                <p>Big Progress</p>
+
+                <div class="progress progress-success">
+                  <div style="width: 68%;" class="progress-bar progress-bar-success"></div>
+                </div>
+              </div>
+            </div>
+            <!--col-->
+            <div class="col-md-4">
+              <div class="col-md-11">
+                <h3>Other Options</h3>
+
+                <p>A cool animation that shows the progress bar is active, these coming in all 4 colours
+                  plus
+                  all sizes. </p>
+                <br>
+
+                <div class="progress progress-striped active progress-large">
+                  <div style="width: 45%;" class="progress-bar progress-bar-success"></div>
+                </div>
+                <div class="progress progress-striped active ">
+                  <div style="width: 45%;" class="progress-bar progress-bar-danger"></div>
+                </div>
+              </div>
+            </div>
+            <!--col-->
+            <div class="clearfix"></div>
+            <div class="col-md-6">
+              <h3>Dynamic
+                <button class="btn btn-sm btn-primary" type="button" ng-click="random()">Randomize
+                </button>
+              </h3>
+              <progressbar max="max" value="dynamic"><span
+                style="color:black; white-space:nowrap;">{{dynamic}} / {{max}}</span></progressbar>
+
+              <small><em>No animation</em></small>
+              <progressbar animate="false" value="dynamic" type="success"><b>{{dynamic}}%</b>
+              </progressbar>
+
+              <small><em>Object (changes type based on value)</em></small>
+              <progressbar class="progress-striped active" value="dynamic" type="{{type}}">{{type}} <i
+                ng-show="showWarning">!!!
+                Watch out !!!</i></progressbar>
+            </div>
+            <!--col-->
+            <div class="col-md-6">
+              <h3>Stacked
+                <button class="btn btn-sm btn-primary" type="button" ng-click="randomStacked()">
+                  Randomize
+                </button>
+              </h3>
+              <progress>
+                <bar ng-repeat="bar in stacked track by $index" value="bar.value"
+                     type="{{bar.type}}"><span
+                  ng-hide="bar.value < 5">{{bar.value}}%</span></bar>
+              </progress>
+            </div>
+            <!--col-->
+
+          </div>
+          <!--row-->
+
+
+        </div>
+      </div>
+      <!--panel-->
+    </div>
+    <!--col-->
+  </div>
+  <!--row-->
+</section>

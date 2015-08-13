@@ -1,0 +1,39 @@
+<section class="page-title">
+  <h3>UserList</h3>
+  <ol class="breadcrumb">
+    <li><a ui-sref="app.dashboard">Dashboard</a></li>
+    <li class="active">UserList</li>
+  </ol>
+  <div class="clearfix"></div>
+</section>
+
+<section class="content" data-ng-controller="userListCtrl">
+  <section class="row">
+    <div class=" col-xs-12 col-sm-4 col-md-3" ng-repeat="user in users">
+      <div class="panel">
+        <div class="panel-body">
+          <div class="userList">
+            <div class="userOperate">
+              <a class="pull-left"><i class="fa fa-exchange"></i></a>
+              <a class="pull-right"><i class="fa fa-share"></i></a>
+            </div>
+            <div class="userImg">
+              <a ui-sref="app.userProfile"><img ng-src="images/{{user.image}}" class="img-circle"
+                                                width="80px"/></a>
+              <h4><a ui-sref="app.userProfile">{{user.name}}</a></h4>
+
+              <p class="text-blue">{{user.snippet}}</p>
+            </div>
+            <div class="text-muted p-l-20">
+              <p><i class="fa fa-share-alt m-r-10"></i>Imported from {{user.from}}</p>
+
+              <p><i class="fa fa-user m-r-10"></i>By {{user.byName}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--panel-->
+    </div>
+    <!--col-->
+  </section>
+</section>
